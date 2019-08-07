@@ -1,0 +1,6 @@
+public class Teacher {
+		public String name;
+		public void teaching(String a){
+			System.out.println(a+"在上课...");
+		}
+}
