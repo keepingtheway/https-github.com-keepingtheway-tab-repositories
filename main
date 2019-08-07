@@ -1,0 +1,39 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Teacher t=new Teacher();
+			//调用类中的属性
+			t.name="老马";
+			//调用类中的方法
+			t.teaching(t.name);
+			Phone p=new Phone();
+			p.type="苹果";
+			p.money=532.16;
+			p.screen="550x660";
+			p.call();
+			p.print();
+			GirlFriend g=new GirlFriend();
+			//age属性私有化 避免数据打印错误\
+			g.setName("一号女友");
+			g.setAge(-3);
+			System.out.println(g.getName());
+			System.out.println(g.getAge());
+			g.setAge(28);
+			g.show();
+			System.out.println(g.getAge());
+		
+		
+		
+		
+		
+		    GirlFriend g2=new GirlFriend();
+		    GirlFriend g1=new GirlFriend("女一号",25);
+		    g2.setName("女二号");
+		    g2.setAge(20);
+		    System.out.println(g1.getName()+g1.getAge());
+		    System.out.println(g2.getName()+g2.getAge());
+		    g2.show();
+		    g1.show();
+	}
